@@ -10,8 +10,14 @@ public class Student
 {
    public string Name { get; private set; }
 
-    public int BirthMonth { get; private set; }
+    public int BirthMonth { get;  }
     
     public int BirthDay { get; }
 
- }
+    public Student(string name, int birthMonth, int birthDay)
+    {
+        Name = name;
+        BirthMonth = birthMonth;
+        BirthDay = birthDay;
+    }
+}
