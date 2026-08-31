@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClassRoomNet60;
 
-public class ClassRoom
+public class ClassRooms
 {
     public string ClassName { get; }
     public List<Student> StudentList { get; set; }
     public DateTime SemesterStart { get; }
 
-    public ClassRoom(string className, DateTime semesterStart)
+    public ClassRooms(string className, DateTime semesterStart)
     {
         StudentList = new List<Student>();
         ClassName = className;
-        SemesterStart = semesterStart;
+        SemesterStart = new();
     }
 
 }
