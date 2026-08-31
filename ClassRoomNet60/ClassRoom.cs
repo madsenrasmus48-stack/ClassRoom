@@ -16,7 +16,13 @@ public class ClassRooms
     {
         StudentList = new List<Student>();
         ClassName = className;
-        SemesterStart = new();
+        SemesterStart = semesterStart;
+    }
+
+    public override string ToString()
+    {
+        
+        return $"Navn: {ClassName}, Semester start: {SemesterStart}, Studenter liste: {string.Join(" , ", StudentList)}";
     }
 
 }

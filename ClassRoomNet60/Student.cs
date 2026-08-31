@@ -20,4 +20,9 @@ public class Student
         BirthMonth = birthMonth;
         BirthDay = birthDay;
     }
+
+    public override string ToString()
+    {
+        return Name;
+    }
 }
