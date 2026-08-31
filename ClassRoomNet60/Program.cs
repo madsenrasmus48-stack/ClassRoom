@@ -13,3 +13,5 @@ room25D.StudentList.Add(christian);
 
 Console.WriteLine(room25D.SemesterStart);
 Console.WriteLine(room25D);
+
+Console.WriteLine(rasmus.Season());
