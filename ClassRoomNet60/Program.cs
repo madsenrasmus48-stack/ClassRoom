@@ -15,3 +15,10 @@ Console.WriteLine(room25D.SemesterStart);
 Console.WriteLine(room25D);
 
 Console.WriteLine(rasmus.Season());
+
+
+string b = "spring";
+var tal = room25D.StudentList.Select(x => x).Where(x => x.Season()==b).Count();
+
+Console.WriteLine($"spring: {tal}");
+
